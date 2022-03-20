@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://www.threecamellodge.com/wp-content/uploads/2021/02/MN-Gobi-Flaming-Cliffs-Highest-cliff-Sunset-photo-Wide-Angle-copyright-Buya-1000x600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+img{
+    height: 100vh;
+}
+nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px 0 100px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 8px 10px;
+}
+nav ul li a:hover {
+  background: #fff;
+  border-radius: 11px;
+  color: black;
+  transition: all 0.5s , border-radius 1ms;
+  ;
+}
+
+.logo {
+  font-size: 33px;
+  color: #fff;
+  font-weight: 600;
+}
+.logo:hover{
+    color: black;
+    transition: 0.5s;
+    cursor: pointer;
+}
+@media(max-width:870px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        transition: all 0.5s ease;
+    }
+
+}
+@media(max-width:666px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        padding: 0 50px;
+        transition: all 0.5s ease;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        background:none;
+        text-align: center;
+        margin-top: 50px;
+
+    }
+    nav ul li a:hover {
+        background: none;
+        border-radius: 11px;
+        color: cyan;
+        transition: all 0.5s , border-radius 1ms;
+        ;
+      }
+
+
+}
+@media(max-width:400px){
+    nav {
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px 0 100px;
+        background: #1b1b1b;
+      }
+      .logo{
+        padding-right: 194px;
+        padding-top: 20px;
+      }
+      nav ul{
+        margin-top: 88px;
+        padding-right: 34px;
+      }
+
+}
